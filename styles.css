@@ -1,0 +1,16 @@
+body {
+    background-color: #0d1117;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-items {
+    flex: 1;
+}
+
+.image {
+    margin: auto;
+    display: block;
+}
