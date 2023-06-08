@@ -1,0 +1,1567 @@
+{
+    "targets": [
+        {
+            "isStage": true,
+            "name": "Stage",
+            "variables": {
+                "[xB{IKr6;*YP=@MeaeP*": [
+                    "oi-josuke",
+                    20
+                ]
+            },
+            "lists": {},
+            "broadcasts": {},
+            "blocks": {
+                "F": {
+                    "opcode": "event_whenflagclicked",
+                    "next": "l",
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {},
+                    "topLevel": true
+                },
+                "l": {
+                    "opcode": "looks_switchbackdropto",
+                    "next": null,
+                    "parent": "F",
+                    "inputs": {
+                        "BACKDROP": [
+                            1,
+                            "G"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "G": {
+                    "opcode": "looks_backdrops",
+                    "next": null,
+                    "parent": "l",
+                    "inputs": {},
+                    "fields": {
+                        "BACKDROP": [
+                            "background",
+                            null
+                        ]
+                    },
+                    "shadow": true
+                },
+                "H": {
+                    "opcode": "event_whenflagclicked",
+                    "next": "m",
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {},
+                    "topLevel": true
+                },
+                "m": {
+                    "opcode": "control_forever",
+                    "next": null,
+                    "parent": "H",
+                    "inputs": {
+                        "SUBSTACK": [
+                            2,
+                            "a"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "a": {
+                    "opcode": "control_if",
+                    "next": null,
+                    "parent": "m",
+                    "inputs": {
+                        "CONDITION": [
+                            2,
+                            "I"
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "b"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "I": {
+                    "opcode": "operator_gt",
+                    "next": null,
+                    "parent": "a",
+                    "inputs": {
+                        "OPERAND1": [
+                            3,
+                            [
+                                12,
+                                "oi-josuke",
+                                "[xB{IKr6;*YP=@MeaeP*"
+                            ],
+                            [
+                                10,
+                                ""
+                            ]
+                        ],
+                        "OPERAND2": [
+                            1,
+                            [
+                                10,
+                                "19"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "b": {
+                    "opcode": "control_repeat",
+                    "next": "c",
+                    "parent": "a",
+                    "inputs": {
+                        "TIMES": [
+                            1,
+                            [
+                                6,
+                                "35"
+                            ]
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "n"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "n": {
+                    "opcode": "looks_nextbackdrop",
+                    "next": "J",
+                    "parent": "b",
+                    "inputs": {},
+                    "fields": {}
+                },
+                "J": {
+                    "opcode": "control_wait",
+                    "next": null,
+                    "parent": "n",
+                    "inputs": {
+                        "DURATION": [
+                            1,
+                            [
+                                5,
+                                "0.016666666"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "c": {
+                    "opcode": "sound_play",
+                    "next": "d",
+                    "parent": "b",
+                    "inputs": {
+                        "SOUND_MENU": [
+                            1,
+                            "K"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "K": {
+                    "opcode": "sound_sounds_menu",
+                    "next": null,
+                    "parent": "c",
+                    "inputs": {},
+                    "fields": {
+                        "SOUND_MENU": [
+                            "erase",
+                            null
+                        ]
+                    },
+                    "shadow": true
+                },
+                "d": {
+                    "opcode": "control_repeat",
+                    "next": "L",
+                    "parent": "c",
+                    "inputs": {
+                        "TIMES": [
+                            1,
+                            [
+                                6,
+                                "27"
+                            ]
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "o"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "o": {
+                    "opcode": "looks_nextbackdrop",
+                    "next": "M",
+                    "parent": "d",
+                    "inputs": {},
+                    "fields": {}
+                },
+                "M": {
+                    "opcode": "control_wait",
+                    "next": null,
+                    "parent": "o",
+                    "inputs": {
+                        "DURATION": [
+                            1,
+                            [
+                                5,
+                                "0.016666666"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "L": {
+                    "opcode": "control_stop",
+                    "next": null,
+                    "parent": "d",
+                    "inputs": {},
+                    "fields": {
+                        "STOP_OPTION": [
+                            "this script",
+                            null
+                        ]
+                    },
+                    "mutation": {
+                        "tagName": "mutation",
+                        "children": [],
+                        "hasnext": "false"
+                    }
+                }
+            },
+            "comments": {},
+            "currentCostume": 62,
+            "costumes": [
+                {
+                    "assetId": "58bbf1f2ac03079db3ddb155a719b43b",
+                    "name": "background",
+                    "bitmapResolution": 2,
+                    "md5ext": "58bbf1f2ac03079db3ddb155a719b43b.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "1081e49449d709be0bc5fb7c8cd01ee2",
+                    "name": "erase",
+                    "bitmapResolution": 2,
+                    "md5ext": "1081e49449d709be0bc5fb7c8cd01ee2.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "7d47598abc93d241e9d3d46e4230dd87",
+                    "name": "erase2",
+                    "bitmapResolution": 2,
+                    "md5ext": "7d47598abc93d241e9d3d46e4230dd87.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "a358459485d136d8e14683799db81f23",
+                    "name": "erase3",
+                    "bitmapResolution": 2,
+                    "md5ext": "a358459485d136d8e14683799db81f23.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "4961cf5863130b20c5c6433106cc59f4",
+                    "name": "erase4",
+                    "bitmapResolution": 2,
+                    "md5ext": "4961cf5863130b20c5c6433106cc59f4.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "f551089432db5e634b051187b6f7c8bb",
+                    "name": "erase5",
+                    "bitmapResolution": 2,
+                    "md5ext": "f551089432db5e634b051187b6f7c8bb.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "416e893dcc7d40994dfbda527ed33971",
+                    "name": "erase6",
+                    "bitmapResolution": 2,
+                    "md5ext": "416e893dcc7d40994dfbda527ed33971.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "7bd190ab9c5d8c9365e0be3df79cb01b",
+                    "name": "erase7",
+                    "bitmapResolution": 2,
+                    "md5ext": "7bd190ab9c5d8c9365e0be3df79cb01b.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "6f2a5b0972fe7e4808c1cbc83d87b1ec",
+                    "name": "erase8",
+                    "bitmapResolution": 2,
+                    "md5ext": "6f2a5b0972fe7e4808c1cbc83d87b1ec.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "1601237f92a1315d23ae57df71df9d5f",
+                    "name": "erase9",
+                    "bitmapResolution": 2,
+                    "md5ext": "1601237f92a1315d23ae57df71df9d5f.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "28f733d20c908b0fc1f16ed40b71b898",
+                    "name": "erase10",
+                    "bitmapResolution": 2,
+                    "md5ext": "28f733d20c908b0fc1f16ed40b71b898.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "7d5ba6b2b4256554916dc4bfedf32872",
+                    "name": "erase11",
+                    "bitmapResolution": 2,
+                    "md5ext": "7d5ba6b2b4256554916dc4bfedf32872.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "6de6203cccc60c705efd3c8cf1d29998",
+                    "name": "erase12",
+                    "bitmapResolution": 2,
+                    "md5ext": "6de6203cccc60c705efd3c8cf1d29998.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "6de6203cccc60c705efd3c8cf1d29998",
+                    "name": "erase13",
+                    "bitmapResolution": 2,
+                    "md5ext": "6de6203cccc60c705efd3c8cf1d29998.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "b8095284fe237f6ed11ffbc8dc51324e",
+                    "name": "erase14",
+                    "bitmapResolution": 2,
+                    "md5ext": "b8095284fe237f6ed11ffbc8dc51324e.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "1767520836869667ab467d62e9fb39d7",
+                    "name": "erase15",
+                    "bitmapResolution": 2,
+                    "md5ext": "1767520836869667ab467d62e9fb39d7.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "7a8ba35aa6a67ec9c36bd6ebd4696a35",
+                    "name": "erase16",
+                    "bitmapResolution": 2,
+                    "md5ext": "7a8ba35aa6a67ec9c36bd6ebd4696a35.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "b7f5cc45aa8da190c1c10b65028f4c20",
+                    "name": "erase17",
+                    "bitmapResolution": 2,
+                    "md5ext": "b7f5cc45aa8da190c1c10b65028f4c20.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "5b4a2532314a9637d9ea9b6e204dc856",
+                    "name": "erase18",
+                    "bitmapResolution": 2,
+                    "md5ext": "5b4a2532314a9637d9ea9b6e204dc856.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "41f50aca2839cf9c3ac8e7e1aaad1d43",
+                    "name": "erase19",
+                    "bitmapResolution": 2,
+                    "md5ext": "41f50aca2839cf9c3ac8e7e1aaad1d43.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "2b37d0cc7e3197dfd5eeb5329a695dd7",
+                    "name": "erase20",
+                    "bitmapResolution": 2,
+                    "md5ext": "2b37d0cc7e3197dfd5eeb5329a695dd7.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "5cbdc42fb2a13eb69561af9f6d0415c4",
+                    "name": "erase21",
+                    "bitmapResolution": 2,
+                    "md5ext": "5cbdc42fb2a13eb69561af9f6d0415c4.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "98b7152f4d1746c63739a9444b79e0ad",
+                    "name": "erase22",
+                    "bitmapResolution": 2,
+                    "md5ext": "98b7152f4d1746c63739a9444b79e0ad.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "5be6988df821cf991d06bdd0aff5e924",
+                    "name": "erase23",
+                    "bitmapResolution": 2,
+                    "md5ext": "5be6988df821cf991d06bdd0aff5e924.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "8795957c11a5241280e9c940c70e47c6",
+                    "name": "erase24",
+                    "bitmapResolution": 2,
+                    "md5ext": "8795957c11a5241280e9c940c70e47c6.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "dbfdec320d83016233538a56bf2ac0cb",
+                    "name": "erase25",
+                    "bitmapResolution": 2,
+                    "md5ext": "dbfdec320d83016233538a56bf2ac0cb.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "7d2e0f085d7520b57db0470ed09733d7",
+                    "name": "erase26",
+                    "bitmapResolution": 2,
+                    "md5ext": "7d2e0f085d7520b57db0470ed09733d7.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "547ed902c43ee38403e4e40c98c0c38d",
+                    "name": "erase27",
+                    "bitmapResolution": 2,
+                    "md5ext": "547ed902c43ee38403e4e40c98c0c38d.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "831af94c71927293d662a79d3e1e8a6c",
+                    "name": "erase28",
+                    "bitmapResolution": 2,
+                    "md5ext": "831af94c71927293d662a79d3e1e8a6c.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "cc7f1aeb2210c4ad7d0a8927780c5975",
+                    "name": "erase29",
+                    "bitmapResolution": 2,
+                    "md5ext": "cc7f1aeb2210c4ad7d0a8927780c5975.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "a2cf357bed9e9002a7f3726c7f879c9a",
+                    "name": "erase30",
+                    "bitmapResolution": 2,
+                    "md5ext": "a2cf357bed9e9002a7f3726c7f879c9a.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "7dc04777ebdd1baff31ca7e2b672a0d8",
+                    "name": "erase31",
+                    "bitmapResolution": 2,
+                    "md5ext": "7dc04777ebdd1baff31ca7e2b672a0d8.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "8e01fd746f09f415423140109a20cb8b",
+                    "name": "erase32",
+                    "bitmapResolution": 2,
+                    "md5ext": "8e01fd746f09f415423140109a20cb8b.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "239080432b2421f6480e6e263b29d3b3",
+                    "name": "erase33",
+                    "bitmapResolution": 2,
+                    "md5ext": "239080432b2421f6480e6e263b29d3b3.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "f1ef33b1e7a9cae96bd90ac00683dc75",
+                    "name": "erase34",
+                    "bitmapResolution": 2,
+                    "md5ext": "f1ef33b1e7a9cae96bd90ac00683dc75.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "55c0d842bc8825156059c1529ba07754",
+                    "name": "erase35",
+                    "bitmapResolution": 2,
+                    "md5ext": "55c0d842bc8825156059c1529ba07754.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "ed48a3461f5624415dc5ba86dfe5a3fd",
+                    "name": "erase36",
+                    "bitmapResolution": 2,
+                    "md5ext": "ed48a3461f5624415dc5ba86dfe5a3fd.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "9d683a29929f02645135f8d501c66201",
+                    "name": "erase37",
+                    "bitmapResolution": 2,
+                    "md5ext": "9d683a29929f02645135f8d501c66201.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "9d683a29929f02645135f8d501c66201",
+                    "name": "erase38",
+                    "bitmapResolution": 2,
+                    "md5ext": "9d683a29929f02645135f8d501c66201.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "6191754d03b294a0bde9395a103dcc23",
+                    "name": "erase39",
+                    "bitmapResolution": 2,
+                    "md5ext": "6191754d03b294a0bde9395a103dcc23.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "e93b1d320716006382039cddab2070eb",
+                    "name": "erase40",
+                    "bitmapResolution": 2,
+                    "md5ext": "e93b1d320716006382039cddab2070eb.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "e0ffd325b9cf7952baf253c1ce9efc5b",
+                    "name": "erase41",
+                    "bitmapResolution": 2,
+                    "md5ext": "e0ffd325b9cf7952baf253c1ce9efc5b.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "5dd3b7db8bf8ff24cd87bc731fbda7db",
+                    "name": "erase42",
+                    "bitmapResolution": 2,
+                    "md5ext": "5dd3b7db8bf8ff24cd87bc731fbda7db.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "6aa12706947069d0e18f3c7a1c12ddf9",
+                    "name": "erase43",
+                    "bitmapResolution": 2,
+                    "md5ext": "6aa12706947069d0e18f3c7a1c12ddf9.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "9964c7eee109f95406841a120cac3ee0",
+                    "name": "erase44",
+                    "bitmapResolution": 2,
+                    "md5ext": "9964c7eee109f95406841a120cac3ee0.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "8b188713b7fa49bcd34ff4b002b02396",
+                    "name": "erase45",
+                    "bitmapResolution": 2,
+                    "md5ext": "8b188713b7fa49bcd34ff4b002b02396.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "511b6633397381ea343f4dac3e8f1e6c",
+                    "name": "erase46",
+                    "bitmapResolution": 2,
+                    "md5ext": "511b6633397381ea343f4dac3e8f1e6c.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "cc8397afeb8499647f541ce74cc8ecfa",
+                    "name": "erase47",
+                    "bitmapResolution": 2,
+                    "md5ext": "cc8397afeb8499647f541ce74cc8ecfa.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "0a980f20e9f86ab457d48cb5c38749f1",
+                    "name": "erase48",
+                    "bitmapResolution": 2,
+                    "md5ext": "0a980f20e9f86ab457d48cb5c38749f1.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "aa5ee0348314e2e2dfb1450b994b12a9",
+                    "name": "erase49",
+                    "bitmapResolution": 2,
+                    "md5ext": "aa5ee0348314e2e2dfb1450b994b12a9.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "789c0f676e4836f1d05d782ae07e50f6",
+                    "name": "erase50",
+                    "bitmapResolution": 2,
+                    "md5ext": "789c0f676e4836f1d05d782ae07e50f6.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "9eb404ab55cba28fcd7d35e273658857",
+                    "name": "erase51",
+                    "bitmapResolution": 2,
+                    "md5ext": "9eb404ab55cba28fcd7d35e273658857.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "f19849043c1f858914d87474ad96a771",
+                    "name": "erase52",
+                    "bitmapResolution": 2,
+                    "md5ext": "f19849043c1f858914d87474ad96a771.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "fd75ad88a40dfde2bf23540599bb5911",
+                    "name": "erase53",
+                    "bitmapResolution": 2,
+                    "md5ext": "fd75ad88a40dfde2bf23540599bb5911.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "7e17038dd01ebcc813f0f05cc47d8193",
+                    "name": "erase54",
+                    "bitmapResolution": 2,
+                    "md5ext": "7e17038dd01ebcc813f0f05cc47d8193.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "9fae22ba1d49b515f78daa3a7f55deb7",
+                    "name": "erase55",
+                    "bitmapResolution": 2,
+                    "md5ext": "9fae22ba1d49b515f78daa3a7f55deb7.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "f5fb4fb2d1612b4a71812de9a6049e90",
+                    "name": "erase56",
+                    "bitmapResolution": 2,
+                    "md5ext": "f5fb4fb2d1612b4a71812de9a6049e90.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "855cb9ce37b307e942785126c94bada7",
+                    "name": "erase57",
+                    "bitmapResolution": 2,
+                    "md5ext": "855cb9ce37b307e942785126c94bada7.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "6e8589c3fae5ce9907f80f4c6a7a4bf9",
+                    "name": "erase58",
+                    "bitmapResolution": 2,
+                    "md5ext": "6e8589c3fae5ce9907f80f4c6a7a4bf9.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "5aeb127556e4a6835b547741ae7d7f53",
+                    "name": "erase59",
+                    "bitmapResolution": 2,
+                    "md5ext": "5aeb127556e4a6835b547741ae7d7f53.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "3122a57c5d15f4e37ce3cf3e14665a6e",
+                    "name": "erase60",
+                    "bitmapResolution": 2,
+                    "md5ext": "3122a57c5d15f4e37ce3cf3e14665a6e.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "8c74fb7d8e376eb6420398dbcd44e460",
+                    "name": "erase61",
+                    "bitmapResolution": 2,
+                    "md5ext": "8c74fb7d8e376eb6420398dbcd44e460.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 426,
+                    "rotationCenterY": 319.5
+                },
+                {
+                    "assetId": "cd21514d0531fdffb22204e0ec5ed84a",
+                    "name": "void",
+                    "bitmapResolution": 1,
+                    "md5ext": "cd21514d0531fdffb22204e0ec5ed84a.svg",
+                    "dataFormat": "svg",
+                    "rotationCenterX": 0,
+                    "rotationCenterY": 0
+                }
+            ],
+            "sounds": [
+                {
+                    "assetId": "04e907600d7e3462c9327552f8cd6032",
+                    "name": "erase",
+                    "dataFormat": "mp3",
+                    "rate": 48000,
+                    "sampleCount": 65664,
+                    "md5ext": "04e907600d7e3462c9327552f8cd6032.mp3"
+                }
+            ],
+            "volume": 100,
+            "layerOrder": 0,
+            "tempo": 60,
+            "videoTransparency": 50,
+            "videoState": "on",
+            "textToSpeechLanguage": null
+        },
+        {
+            "isStage": false,
+            "name": "okuyasu",
+            "variables": {},
+            "lists": {},
+            "broadcasts": {},
+            "blocks": {
+                "N": {
+                    "opcode": "event_whenflagclicked",
+                    "next": "p",
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {},
+                    "topLevel": true
+                },
+                "p": {
+                    "opcode": "data_setvariableto",
+                    "next": "q",
+                    "parent": "N",
+                    "inputs": {
+                        "VALUE": [
+                            1,
+                            [
+                                10,
+                                "0"
+                            ]
+                        ]
+                    },
+                    "fields": {
+                        "VARIABLE": [
+                            "oi-josuke",
+                            "[xB{IKr6;*YP=@MeaeP*"
+                        ]
+                    }
+                },
+                "q": {
+                    "opcode": "looks_setsizeto",
+                    "next": "r",
+                    "parent": "p",
+                    "inputs": {
+                        "SIZE": [
+                            1,
+                            [
+                                4,
+                                "140"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "r": {
+                    "opcode": "motion_gotoxy",
+                    "next": "s",
+                    "parent": "q",
+                    "inputs": {
+                        "X": [
+                            1,
+                            [
+                                4,
+                                "-32"
+                            ]
+                        ],
+                        "Y": [
+                            1,
+                            [
+                                4,
+                                "-68"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "s": {
+                    "opcode": "looks_gotofrontback",
+                    "next": "t",
+                    "parent": "r",
+                    "inputs": {},
+                    "fields": {
+                        "FRONT_BACK": [
+                            "front",
+                            null
+                        ]
+                    }
+                },
+                "t": {
+                    "opcode": "looks_show",
+                    "next": "u",
+                    "parent": "s",
+                    "inputs": {},
+                    "fields": {}
+                },
+                "u": {
+                    "opcode": "sound_play",
+                    "next": null,
+                    "parent": "t",
+                    "inputs": {
+                        "SOUND_MENU": [
+                            1,
+                            "O"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "O": {
+                    "opcode": "sound_sounds_menu",
+                    "next": null,
+                    "parent": "u",
+                    "inputs": {},
+                    "fields": {
+                        "SOUND_MENU": [
+                            "oi-josuke",
+                            null
+                        ]
+                    },
+                    "shadow": true
+                },
+                "P": {
+                    "opcode": "event_whenthisspriteclicked",
+                    "next": "v",
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {},
+                    "topLevel": true
+                },
+                "v": {
+                    "opcode": "data_changevariableby",
+                    "next": "e",
+                    "parent": "P",
+                    "inputs": {
+                        "VALUE": [
+                            1,
+                            [
+                                4,
+                                "1"
+                            ]
+                        ]
+                    },
+                    "fields": {
+                        "VARIABLE": [
+                            "oi-josuke",
+                            "[xB{IKr6;*YP=@MeaeP*"
+                        ]
+                    }
+                },
+                "e": {
+                    "opcode": "control_if",
+                    "next": null,
+                    "parent": "v",
+                    "inputs": {
+                        "CONDITION": [
+                            2,
+                            "w"
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "x"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "w": {
+                    "opcode": "operator_not",
+                    "next": null,
+                    "parent": "e",
+                    "inputs": {
+                        "OPERAND": [
+                            2,
+                            "f"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "f": {
+                    "opcode": "operator_or",
+                    "next": null,
+                    "parent": "w",
+                    "inputs": {
+                        "OPERAND1": [
+                            2,
+                            "Q"
+                        ],
+                        "OPERAND2": [
+                            2,
+                            "R"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "Q": {
+                    "opcode": "operator_equals",
+                    "next": null,
+                    "parent": "f",
+                    "inputs": {
+                        "OPERAND1": [
+                            3,
+                            [
+                                12,
+                                "oi-josuke",
+                                "[xB{IKr6;*YP=@MeaeP*"
+                            ],
+                            [
+                                10,
+                                ""
+                            ]
+                        ],
+                        "OPERAND2": [
+                            1,
+                            [
+                                10,
+                                "5"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "R": {
+                    "opcode": "operator_equals",
+                    "next": null,
+                    "parent": "f",
+                    "inputs": {
+                        "OPERAND1": [
+                            3,
+                            [
+                                12,
+                                "oi-josuke",
+                                "[xB{IKr6;*YP=@MeaeP*"
+                            ],
+                            [
+                                10,
+                                ""
+                            ]
+                        ],
+                        "OPERAND2": [
+                            1,
+                            [
+                                10,
+                                "20"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "x": {
+                    "opcode": "sound_play",
+                    "next": null,
+                    "parent": "e",
+                    "inputs": {
+                        "SOUND_MENU": [
+                            1,
+                            "S"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "S": {
+                    "opcode": "sound_sounds_menu",
+                    "next": null,
+                    "parent": "x",
+                    "inputs": {},
+                    "fields": {
+                        "SOUND_MENU": [
+                            "oi-josuke",
+                            null
+                        ]
+                    },
+                    "shadow": true
+                },
+                "T": {
+                    "opcode": "event_whenflagclicked",
+                    "next": "y",
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {},
+                    "topLevel": true
+                },
+                "y": {
+                    "opcode": "control_forever",
+                    "next": null,
+                    "parent": "T",
+                    "inputs": {
+                        "SUBSTACK": [
+                            2,
+                            "g"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "g": {
+                    "opcode": "control_if",
+                    "next": null,
+                    "parent": "y",
+                    "inputs": {
+                        "CONDITION": [
+                            2,
+                            "U"
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "V"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "U": {
+                    "opcode": "operator_gt",
+                    "next": null,
+                    "parent": "g",
+                    "inputs": {
+                        "OPERAND1": [
+                            3,
+                            [
+                                12,
+                                "oi-josuke",
+                                "[xB{IKr6;*YP=@MeaeP*"
+                            ],
+                            [
+                                10,
+                                ""
+                            ]
+                        ],
+                        "OPERAND2": [
+                            1,
+                            [
+                                10,
+                                "19"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "V": {
+                    "opcode": "looks_hide",
+                    "next": null,
+                    "parent": "g",
+                    "inputs": {},
+                    "fields": {}
+                }
+            },
+            "comments": {},
+            "currentCostume": 0,
+            "costumes": [
+                {
+                    "assetId": "66991fc64f47d6118d02a0552ecdf740",
+                    "name": "okuyasu",
+                    "bitmapResolution": 2,
+                    "md5ext": "66991fc64f47d6118d02a0552ecdf740.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 292,
+                    "rotationCenterY": 130
+                }
+            ],
+            "sounds": [
+                {
+                    "assetId": "a98058d564cd94edb111adfe1a4a106c",
+                    "name": "oi-josuke",
+                    "dataFormat": "mp3",
+                    "rate": 48000,
+                    "sampleCount": 76904,
+                    "md5ext": "a98058d564cd94edb111adfe1a4a106c.mp3"
+                }
+            ],
+            "volume": 100,
+            "layerOrder": 2,
+            "visible": false,
+            "x": -32,
+            "y": -68,
+            "size": 140,
+            "direction": 90,
+            "draggable": false,
+            "rotationStyle": "all around"
+        },
+        {
+            "isStage": false,
+            "name": "The Hand",
+            "variables": {},
+            "lists": {},
+            "broadcasts": {},
+            "blocks": {
+                "W": {
+                    "opcode": "event_whenflagclicked",
+                    "next": "z",
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {},
+                    "topLevel": true
+                },
+                "z": {
+                    "opcode": "looks_cleargraphiceffects",
+                    "next": "A",
+                    "parent": "W",
+                    "inputs": {},
+                    "fields": {}
+                },
+                "A": {
+                    "opcode": "motion_gotoxy",
+                    "next": "B",
+                    "parent": "z",
+                    "inputs": {
+                        "X": [
+                            1,
+                            [
+                                4,
+                                "13"
+                            ]
+                        ],
+                        "Y": [
+                            1,
+                            [
+                                4,
+                                "6"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "C": {
+                    "opcode": "looks_gotofrontback",
+                    "next": "X",
+                    "parent": "B",
+                    "inputs": {},
+                    "fields": {
+                        "FRONT_BACK": [
+                            "back",
+                            null
+                        ]
+                    }
+                },
+                "X": {
+                    "opcode": "looks_seteffectto",
+                    "next": null,
+                    "parent": "C",
+                    "inputs": {
+                        "VALUE": [
+                            1,
+                            [
+                                4,
+                                "100"
+                            ]
+                        ]
+                    },
+                    "fields": {
+                        "EFFECT": [
+                            "GHOST",
+                            null
+                        ]
+                    }
+                },
+                "Y": {
+                    "opcode": "event_whenflagclicked",
+                    "next": "D",
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {},
+                    "topLevel": true
+                },
+                "D": {
+                    "opcode": "control_forever",
+                    "next": null,
+                    "parent": "Y",
+                    "inputs": {
+                        "SUBSTACK": [
+                            2,
+                            "h"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "h": {
+                    "opcode": "control_if",
+                    "next": null,
+                    "parent": "D",
+                    "inputs": {
+                        "CONDITION": [
+                            2,
+                            "Z"
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "i"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "Z": {
+                    "opcode": "operator_gt",
+                    "next": null,
+                    "parent": "h",
+                    "inputs": {
+                        "OPERAND1": [
+                            3,
+                            [
+                                12,
+                                "oi-josuke",
+                                "[xB{IKr6;*YP=@MeaeP*"
+                            ],
+                            [
+                                10,
+                                ""
+                            ]
+                        ],
+                        "OPERAND2": [
+                            1,
+                            [
+                                10,
+                                "4"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "j": {
+                    "opcode": "control_repeat",
+                    "next": "!",
+                    "parent": "i",
+                    "inputs": {
+                        "TIMES": [
+                            1,
+                            [
+                                6,
+                                "25"
+                            ]
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "#"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "#": {
+                    "opcode": "looks_changeeffectby",
+                    "next": null,
+                    "parent": "j",
+                    "inputs": {
+                        "CHANGE": [
+                            1,
+                            [
+                                4,
+                                "-4"
+                            ]
+                        ]
+                    },
+                    "fields": {
+                        "EFFECT": [
+                            "GHOST",
+                            null
+                        ]
+                    }
+                },
+                "!": {
+                    "opcode": "control_stop",
+                    "next": null,
+                    "parent": "j",
+                    "inputs": {},
+                    "fields": {
+                        "STOP_OPTION": [
+                            "this script",
+                            null
+                        ]
+                    },
+                    "mutation": {
+                        "tagName": "mutation",
+                        "children": [],
+                        "hasnext": "false"
+                    }
+                },
+                "i": {
+                    "opcode": "sound_play",
+                    "next": "j",
+                    "parent": "h",
+                    "inputs": {
+                        "SOUND_MENU": [
+                            1,
+                            "%"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "%": {
+                    "opcode": "sound_sounds_menu",
+                    "next": null,
+                    "parent": "i",
+                    "inputs": {},
+                    "fields": {
+                        "SOUND_MENU": [
+                            "summon",
+                            null
+                        ]
+                    },
+                    "shadow": true
+                },
+                "B": {
+                    "opcode": "looks_show",
+                    "next": "C",
+                    "parent": "A",
+                    "inputs": {},
+                    "fields": {}
+                },
+                "(": {
+                    "opcode": "event_whenflagclicked",
+                    "next": "E",
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {},
+                    "topLevel": true
+                },
+                "E": {
+                    "opcode": "control_forever",
+                    "next": null,
+                    "parent": "(",
+                    "inputs": {
+                        "SUBSTACK": [
+                            2,
+                            "k"
+                        ]
+                    },
+                    "fields": {}
+                },
+                "k": {
+                    "opcode": "control_if",
+                    "next": null,
+                    "parent": "E",
+                    "inputs": {
+                        "CONDITION": [
+                            2,
+                            ")"
+                        ],
+                        "SUBSTACK": [
+                            2,
+                            "*"
+                        ]
+                    },
+                    "fields": {}
+                },
+                ")": {
+                    "opcode": "operator_gt",
+                    "next": null,
+                    "parent": "k",
+                    "inputs": {
+                        "OPERAND1": [
+                            3,
+                            [
+                                12,
+                                "oi-josuke",
+                                "[xB{IKr6;*YP=@MeaeP*"
+                            ],
+                            [
+                                10,
+                                ""
+                            ]
+                        ],
+                        "OPERAND2": [
+                            1,
+                            [
+                                10,
+                                "19"
+                            ]
+                        ]
+                    },
+                    "fields": {}
+                },
+                "*": {
+                    "opcode": "looks_hide",
+                    "next": null,
+                    "parent": "k",
+                    "inputs": {},
+                    "fields": {}
+                }
+            },
+            "comments": {},
+            "currentCostume": 0,
+            "costumes": [
+                {
+                    "assetId": "93c6812c2182de748f38b278efebe17b",
+                    "name": "The Hand",
+                    "bitmapResolution": 2,
+                    "md5ext": "93c6812c2182de748f38b278efebe17b.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 400,
+                    "rotationCenterY": 298
+                }
+            ],
+            "sounds": [
+                {
+                    "assetId": "3be121bc64ec6acd966654c01e4e6a22",
+                    "name": "summon",
+                    "dataFormat": "mp3",
+                    "rate": 48000,
+                    "sampleCount": 73728,
+                    "md5ext": "3be121bc64ec6acd966654c01e4e6a22.mp3"
+                }
+            ],
+            "volume": 100,
+            "layerOrder": 1,
+            "visible": false,
+            "x": 13,
+            "y": 6,
+            "size": 100,
+            "direction": 90,
+            "draggable": false,
+            "rotationStyle": "all around"
+        }
+    ],
+    "monitors": [
+        {
+            "id": "LSG5I}0#CWaWA1pB[aLb_volume",
+            "mode": "default",
+            "opcode": "sound_volume",
+            "params": {},
+            "spriteName": "okuyasu",
+            "value": 0,
+            "width": 0,
+            "height": 0,
+            "x": 5,
+            "y": 5,
+            "visible": false,
+            "sliderMin": 0,
+            "sliderMax": 100,
+            "isDiscrete": true
+        },
+        {
+            "id": "[xB{IKr6;*YP=@MeaeP*",
+            "mode": "default",
+            "opcode": "data_variable",
+            "params": {
+                "VARIABLE": "oi-josuke"
+            },
+            "spriteName": null,
+            "value": 0,
+            "width": 0,
+            "height": 0,
+            "x": 0,
+            "y": 12,
+            "visible": false,
+            "sliderMin": 0,
+            "sliderMax": 100,
+            "isDiscrete": true
+        }
+    ],
+    "extensions": [],
+    "meta": {
+        "semver": "3.0.0"
+    }
+}
